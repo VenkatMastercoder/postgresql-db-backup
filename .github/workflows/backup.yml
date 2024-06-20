@@ -43,4 +43,4 @@ jobs:
       - name: Upload backup to S3
         run: |
           YEAR_MONTH=$(date -u +"%Y/%m")
-          aws s3 cp "${TIMESTAMP}.sql.gz" s3://YOUR_S3_BUCKET_NAME/${{ matrix.prefix }}/database/${YEAR_MONTH}/
+          aws s3 cp "${TIMESTAMP}.sql.gz" s3://pg-backup-set-up/${{ matrix.prefix }}/database/${YEAR_MONTH}/
