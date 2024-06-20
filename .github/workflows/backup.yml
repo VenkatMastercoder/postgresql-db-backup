@@ -37,7 +37,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: us-east-1
-          role-to-assume: arn:aws:iam::AWS_ACCOUNT_ID:role/ROLE_YOU_CREATED_ABOVE
+          role-to-assume: arn:aws:iam::486537099054:role/db-backup-new
           role-session-name: GitHubActionSession
 
       - name: Upload backup to S3
