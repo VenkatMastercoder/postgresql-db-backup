@@ -15,9 +15,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - prefix: PREFIX_1 # I had multiple databases I wanted backed up and each had a secret like:
-          - prefix: PREFIX_2 # "PREFIX_2_BACKUP_DB_CONNECTION". If you only have 1 DB you don't need this
-
+          - prefix: PREFIX_1
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
